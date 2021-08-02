@@ -27,6 +27,7 @@ $basethemevar_error_menu             = $option_fields['basethemevar_error_menu']
 $basethemevar_error_menu_bottom_text             = $option_fields['basethemevar_error_menu_bottom_text'];
 $basethemevar_error_search             = $option_fields['basethemevar_error_search'];
 
+// Updated code for Github Action
 ?>
 
 <div class="s-section">
