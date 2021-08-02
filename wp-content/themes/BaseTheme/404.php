@@ -28,6 +28,7 @@ $basethemevar_error_menu_bottom_text             = $option_fields['basethemevar_
 $basethemevar_error_search             = $option_fields['basethemevar_error_search'];
 
 // Updated code for Github Action
+// Checking SSH key
 ?>
 
 <div class="s-section">
