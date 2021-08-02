@@ -1,0 +1,132 @@
+{
+	"workbench.settings.editor": "json",
+	"workbench.settings.useSplitJSON": true,
+	// Font Settings
+	"editor.fontFamily": "Fira Code, Consolas, 'Courier New', monospace",
+	"editor.fontLigatures": true,
+	"editor.fontSize": 14, // he setted to 17 px
+	"terminal.integrated.fontSize": 13,
+	"editor.lineHeight": 22,
+	"editor.fontWeight": "400",
+	"editor.letterSpacing": 0.5,
+	// Cursor setup
+	"editor.cursorBlinking": "solid",
+	"editor.cursorWidth": 4,
+	// UI Improvements
+	"explorer.openEditors.visible": 3,
+	"editor.codeLens": true,
+	"explorer.confirmDragAndDrop": false,
+	"workbench.editor.enablePreview": false,
+	"editor.snippetSuggestions": "top",
+	"editor.tabCompletion": "on",
+	"editor.quickSuggestionsDelay": 0,
+	"editor.multiCursorModifier": "ctrlCmd",
+	"workbench.panel.defaultLocation": "right",
+	// WhiteSpace Commando Setup
+	"editor.renderWhitespace": "all",
+	"files.trimTrailingWhitespace": true,
+	"files.trimFinalNewlines": true,
+	"files.insertFinalNewline": true,
+	// GiT Settings
+	"git.autofetch": true,
+	"git.enableSmartCommit": true,
+	// Formatting
+	"editor.detectIndentation": false,
+	"window.zoomLevel": 0,
+	"editor.insertSpaces": false,
+	"editor.tabSize": 4,
+	"html.format.contentUnformatted": "pre,code,textarea",
+	"html.format.extraLiners": "head, body, /html",
+	"html.format.indentHandlebars": false,
+	"html.format.indentInnerHtml": false,
+	"html.format.maxPreserveNewLines": 1,
+	"html.format.preserveNewLines": false,
+	"html.format.wrapLineLength": 130,
+	"html.format.wrapAttributes": "auto",
+	// "[html]": {
+	// 	"editor.formatOnSave": true,
+	// 	"editor.formatOnPaste": false,
+	// 	"editor.defaultFormatter": "esbenp.prettier-vscode"
+	// },
+	// "[css]": {
+	// 	"editor.formatOnSave": true,
+	// 	"editor.formatOnPaste": false,
+	// 	"editor.defaultFormatter": "esbenp.prettier-vscode"
+	// },
+	// "[scss]": {
+	// 	"editor.formatOnSave": true,
+	// 	"editor.formatOnPaste": false,
+	// 	"editor.defaultFormatter": "esbenp.prettier-vscode"
+	// },
+	// "[javascript]": {
+	// 	"editor.formatOnSave": false,
+	// 	"editor.formatOnPaste": false,
+	// 	//"editor.defaultFormatter": "esbenp.prettier-vscode"
+	// },
+	// "[json]": {
+	// 	"editor.formatOnSave": true,
+	// 	"editor.formatOnPaste": false,
+	// 	"editor.defaultFormatter": "esbenp.prettier-vscode"
+	// },
+	"[php]": {
+		"editor.formatOnSave": false,
+		"editor.formatOnPaste": false,
+		"editor.defaultFormatter": "rifi2k.format-html-in-php",
+	},
+	// PHP CS
+	"phpcs.enable": true,
+	"phpcs.executablePath": "C:/Users/benna/AppData/Roaming/Composer/vendor/bin/phpcs.bat",
+	"phpcs.standard": "./phpcs.xml.dist",
+	// PHP CBF
+	"phpcbf.enable": true,
+	"phpcbf.executablePath": "C:/Users/benna/AppData/Roaming/Composer/vendor/bin/phpcbf.bat",
+	"phpcbf.onsave": true,
+	"phpcbf.documentFormattingProvider": true,
+	"phpcbf.standard": "./phpcs.xml.dist",
+	// PHP Files.
+	"saveAndRun": {
+		"commands": [
+			// {
+			// 	"match": "\\.php$",
+			// 	"cmd": "phpcbf --standard='WordPress' ${file}",
+			// 	"silent": true
+			// },
+			{
+				"match": "\\.css$",
+				"cmd": "stylelint ${file} --fix",
+				"silent": true
+			},
+			{
+				"match": "\\.scss$",
+				"cmd": "stylelint ${file} --fix",
+				"silent": true
+			},
+			// {
+			// 	"match": "\\.js$",
+			// 	"cmd": "eslint ${file} --fix",
+			// 	"silent": true
+			// }
+		]
+	},
+	"search.exclude": {
+		"**/node_modules": true,
+		"**/bower_components": true,
+		"**/vendor": true,
+		"**/.vscode": true
+	},
+	//"files.eol": "\n",
+	"css.validate": false,
+	"less.validate": false,
+	"scss.validate": false,
+	"eslint.alwaysShowStatus": true,
+	// "eslint.autoFixOnSave": true,
+	"javascript.validate.enable": false,
+	"terminal.integrated.shellArgs.windows": [
+		"-ExecutionPolicy",
+		"Bypass"
+	],
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true
+	},
+
+}

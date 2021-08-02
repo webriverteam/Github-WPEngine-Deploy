@@ -1,0 +1,21 @@
+.pagination {
+	margin: 4rem auto;
+	text-align: center;
+
+	a,
+	a:visited,
+	span {
+		color: map-get($colors, white);
+		display: inline-block;
+		margin: 0.3rem 0.6rem 0.3rem 0;
+		padding: 0.8rem 1.2rem;
+		background-color: map-get($colors, blackbg);
+		border-radius: 3px;
+	}
+
+	.current,
+	a:hover {
+		color: map-get($colors, white);
+		background-color: map-get($colors, red);
+	}
+}

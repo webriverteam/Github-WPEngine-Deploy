@@ -1,0 +1,24 @@
+input[type="submit"],
+button,
+input[type="button"] {
+	padding: 20px 25px;
+	display: inline-block;
+	line-height: 1;
+	box-sizing: border-box;
+	border: 1px solid transparent;
+	font-size: 18px;
+	background-color: map-get($colors, dblue);
+	color: map-get($colors, white);
+	@include font(open, sbold);
+	@include border-radius(10px);
+	height: 60px;
+	outline: none;
+	cursor: pointer;
+	margin: 0 auto;
+}
+
+input[type="submit"]:hover,
+button:hover,
+input[type="button"]:hover {
+	background-color: map-get($map: $colors, $key: lblue);
+}

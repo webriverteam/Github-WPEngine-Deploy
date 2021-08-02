@@ -1,0 +1,29 @@
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin: 0 0 4rem 0;
+	width: 100%;
+	table-layout: fixed;
+}
+
+th {
+	font-weight: 700;
+	padding: 1.5rem 1.8rem;
+}
+
+tr {
+	vertical-align: middle;
+
+	&:nth-child(even) {
+		background-color: #eaeaea;
+	}
+}
+
+td {
+	padding: 1.3rem 1.8rem;
+	vertical-align: middle;
+
+	&:nth-child(1) {
+		text-align: left;
+	}
+}

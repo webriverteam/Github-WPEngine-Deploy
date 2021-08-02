@@ -1,0 +1,262 @@
+/****
+ *
+ * body
+ *
+****/
+body {
+	@include font(open, reg, family weight);
+	@include font-size(1.8);
+	transition: padding 0.2s ease;
+	color: map-get($colors, mgray);
+	line-height: 1.5;
+	padding-top: 108px;
+	&.shrink {
+		padding-top: 88px;
+	}
+}
+p {
+	margin: 0 0 3rem 0;
+}
+
+a {
+	color: map-get($colors, co-blue);
+}
+
+.glide-block,
+.page-content {
+	a,
+	&:visited {
+		color: map-get($map: $colors, $key: black);
+		position: relative;
+		border-bottom: 1px solid map-get($map: $colors, $key: black);
+		&:hover,
+		&:active {
+			color: map-get($map: $colors, $key: black);
+			border-color: map-get($map: $colors, $key: black);
+		}
+	}
+}
+
+/****
+ *
+ * containers
+ *
+****/
+
+.big-wrapper {
+	max-width: 1600px;
+	width: 90%;
+	margin: 0 auto;
+}
+.wrapper {
+	max-width: 1180px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.m-section {
+	.wrapper {
+		max-width: 1000px;
+	}
+}
+
+.s-section {
+	.wrapper {
+		max-width: 760px;
+	}
+}
+
+/****
+ *
+ * Valign-wrapper Style
+ *
+ ****/
+.valign-wrapper {
+	display: flex;
+	align-items: center;
+}
+/****
+ *
+ * helper classes
+ *
+****/
+.black-text {
+	color: map-get($colors, black) !important;
+}
+
+.float-right {
+	float: right;
+}
+
+.float-left {
+	float: left;
+	padding-right: 10px;
+}
+
+/****
+ *
+ * breadcrumbs
+ *
+****/
+#breadcrumbs {
+	color: map-get($colors, la-blue70);
+	text-transform: uppercase;
+	margin-bottom: 23px;
+	font-size: 14px;
+
+	span {
+		font-size: 18px;
+	}
+
+	span.breadcrumb_last {
+		font-size: 14px;
+		font-weight: 500;
+		margin-left: 10px;
+	}
+
+	a,
+	&:visited {
+		color: map-get($colors, la-blue70);
+		font-weight: 700;
+		margin: 0 10px;
+		border-bottom: 1px solid transparent;
+		font-size: 14px;
+
+		&:hover {
+			border-bottom: 1px solid map-get($colors, la-blue70);
+		}
+	}
+}
+
+.single-post #breadcrumbs span span span span span span {
+	color: #f0f8fd;
+}
+
+.single-post #breadcrumbs span span span span span span a {
+	color: map-get($colors, la-blue70);
+}
+
+.single-post #breadcrumbs {
+	span.breadcrumb_last {
+		display: none;
+	}
+}
+
+/****
+ *
+ * buttons
+ *
+****/
+a.button,
+a.button:visited {
+	padding: 20px 25px;
+	display: inline-block;
+	line-height: 1;
+	box-sizing: border-box;
+	border: 1px solid transparent;
+	font-size: 18px;
+	background-color: map-get($colors, dblue);
+	color: map-get($colors, white);
+	@include font(open, sbold);
+	@include border-radius(30px);
+
+	&:hover {
+		background-color: map-get($map: $colors, $key: lblue);
+	}
+}
+.no-visible {
+	visibility: hidden;
+}
+
+/****
+ *
+ * 404 page
+ *
+****/
+.not-found {
+	text-align: center;
+	padding: 50px 0;
+}
+
+.error {
+	text-align: center;
+	margin: 2rem 0;
+	width: 100%;
+
+	.menu {
+		margin: 0;
+	}
+
+	ul li {
+		display: inline-block;
+		margin: 0 0 0 20px;
+		font-weight: 700;
+		padding: 0;
+
+		&:before {
+			display: none;
+		}
+
+		a {
+			padding: 1rem;
+			border-bottom: 0px;
+
+			&:hover {
+				color: map-get($colors, black);
+			}
+		}
+
+		ul {
+			display: none;
+		}
+	}
+}
+.404-form {
+	margin-top: 5rem;
+	p {
+		margin-bottom: 2rem;
+	}
+}
+.xxl-5 {
+	height: 270px;
+}
+
+.xxl-4 {
+	height: 200px;
+}
+
+.xxl-3 {
+	height: 160px;
+}
+
+.xxl-2 {
+	height: 140px;
+}
+
+.xxl-1 {
+	height: 120px;
+}
+
+.xl-3 {
+	height: 100px;
+}
+
+.xl-2 {
+	height: 80px;
+}
+
+.xl-1 {
+	height: 60px;
+}
+
+.l-3 {
+	height: 50px;
+}
+
+.l-2 {
+	height: 40px;
+}
+
+.l-1 {
+	height: 30px;
+}

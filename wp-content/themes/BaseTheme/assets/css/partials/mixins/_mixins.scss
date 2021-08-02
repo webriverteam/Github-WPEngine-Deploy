@@ -1,0 +1,40 @@
+/*
+Rem output with px fallback
+*/
+@mixin font-size($sizeValue: 1) {
+  font-size: ($sizeValue * 10) * 1px;
+  font-size: $sizeValue * 1rem;
+}
+
+/*
+Rem output with px fallback with !important
+*/
+@mixin font-size-imp($sizeValue: 1) {
+  font-size: ($sizeValue * 10) * 1px !important;
+  font-size: $sizeValue * 1rem !important;
+}
+
+/*
+Column width with margin
+*/
+@mixin column-width($numberColumns: 3) {
+  width: map-get($columns, $numberColumns) -
+    (($columns__margin * ($numberColumns - 1)) / $numberColumns);
+}
+
+/*
+Mixin for transition
+*/
+@mixin transition($property, $duration, $animation) {
+  -webkit-transition: $property $duration $animation;
+  -moz-transition: $property $duration $animation;
+  -ms-transition: $property $duration $animation;
+  -o-transition: $property $duration $animation;
+  transition: $property $duration $animation;
+}
+@mixin border-radius($radius) {
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -o-border-radius: $radius;
+}

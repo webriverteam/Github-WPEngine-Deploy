@@ -1,0 +1,205 @@
+.widgets-area {
+	.widget {
+		margin: 0 0 5rem 0;
+	}
+
+	.widget-title {
+		@include font-size(3);
+		color: map-get($colors, mgray);
+		@include font(open, bold, family weight);
+		line-height: 1.4;
+		margin: 0 0 2.5rem 0;
+		text-transform: uppercase;
+
+		a,
+		a:visited {
+			color: map-get($colors, mgray);
+		}
+
+		a:hover {
+			color: map-get($colors, red);
+		}
+	}
+
+	ul {
+		padding: 0;
+		margin: 0 0 2rem 0;
+		list-style: none;
+
+		li {
+			padding: 0 0 0 2.2rem;
+			position: relative;
+			margin: 0 0 2rem 0;
+
+			&:before {
+				width: 6px;
+				height: 6px;
+				border-radius: 2px;
+				position: absolute;
+				left: 0;
+				top: 0.8rem;
+				content: "";
+				border: 1px solid map-get($colors, red);
+			}
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			a,
+			a:visited {
+			}
+
+			a:hover {
+				color: map-get($colors, red);
+			}
+
+			&.recentcomments {
+				span {
+				}
+
+				a {
+					color: map-get($colors, red);
+
+					&:hover {
+					}
+				}
+			}
+		}
+
+		ul {
+			margin: 2rem 0 2rem 0;
+		}
+	}
+
+	ol {
+		padding: 0;
+		margin: 0 0 2rem 0;
+		list-style: none;
+		counter-reset: my-awesome-counter;
+
+		li {
+			padding: 0 0 0 2.6rem;
+			position: relative;
+			margin: 0 0 2rem;
+			counter-increment: my-awesome-counter;
+
+			&::before {
+				content: counter(my-awesome-counter) ".";
+				color: map-get($colors, red);
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			a,
+			a:visited {
+				color: map-get($colors, mgray);
+			}
+
+			a:hover {
+				color: map-get($colors, red);
+			}
+		}
+
+		ol {
+			margin: 2rem 0 2rem 0;
+		}
+	}
+
+	.tagcloud {
+		margin-bottom: 2rem;
+
+		a,
+		a:visited {
+			background-color: map-get($colors, mgray);
+			color: map-get($colors, white);
+			display: inline-block;
+			margin: 0.6rem 0.3rem 0 0;
+			padding: 0.6rem 1.2rem;
+			@include font-size-imp(1.6);
+		}
+
+		a:hover {
+			background-color: map-get($colors, red);
+			color: map-get($colors, white);
+		}
+	}
+
+	.gallery {
+		margin-bottom: 1rem;
+
+		.gallery-item {
+			padding: 0 4px;
+			box-sizing: border-box;
+			margin: 0 0 1px 0;
+		}
+	}
+
+	#wp-calendar {
+		width: 100%;
+		margin: 0 0 2rem 0;
+
+		a,
+		a:visited {
+			color: map-get($colors, red);
+
+			&:hover {
+				color: map-get($colors, mgray);
+			}
+		}
+
+		caption {
+			text-align: right;
+			margin-bottom: 1rem;
+		}
+
+		tr {
+			text-align: center;
+			border: solid 1px #e0e0e0;
+		}
+
+		td {
+			text-align: center;
+			border: solid 1px #e0e0e0;
+		}
+
+		tfoot {
+			#next {
+				text-align: right;
+			}
+
+			#prev {
+				text-align: left;
+			}
+		}
+	}
+
+	.widget_rss {
+		.post-date,
+		.rss-date,
+		cite {
+			@include font-size(1.3);
+			display: block;
+			margin: 0.5rem 0;
+			color: map-get($colors, darkgrey);
+		}
+
+		.rssSummary {
+			margin: 1rem 0;
+			@include font-size(1.3);
+			color: map-get($colors, darkgrey);
+		}
+	}
+
+	.wp-video,
+	.wp-audio-shortcode,
+	.widget_media_image img,
+	.textwidget * {
+		margin-bottom: 2rem;
+	}
+}

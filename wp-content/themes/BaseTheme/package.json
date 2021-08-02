@@ -1,0 +1,54 @@
+{
+	"name": "basethemevar",
+	"description": "WordPress theme by Glide Design",
+	"version": "1.0.0",
+	"author": "Glide Design (https://glidedesign.com)",
+	"repository": {
+		"type": "git",
+		"url": ""
+	},
+	"license": "MIT",
+	"devDependencies": {
+		"@wordpress/eslint-plugin": "^3.0.0",
+		"beepbeep": "^1.2.2",
+		"browser-sync": "^2.26.4",
+		"eslint": "^6.4.0",
+		"eslint-config-prettier": "^6.3.0",
+		"eslint-plugin-prettier": "^3.1.0",
+		"gulp": "^4.0.0",
+		"gulp-autoprefixer": "^7.0.0",
+		"gulp-cache": "^1.0.2",
+		"gulp-clean-css": "^4.2.0",
+		"gulp-concat": "^2.5.2",
+		"gulp-count": "^1.0.0",
+		"gulp-filter": "^5.1.0",
+		"gulp-imagemin": "^4.1.0",
+		"gulp-line-ending-corrector": "^1.0.1",
+		"gulp-minify": "^3.1.0",
+		"gulp-notify": "^3.0.0",
+		"gulp-plumber": "^1.2.0",
+		"gulp-remember": "^1.0.1",
+		"gulp-rename": "^1.2.0",
+		"gulp-rimraf": "^0.2.2",
+		"gulp-sass": "^4.0.1",
+		"gulp-uglify": "^3.0.1",
+		"gulp-zip": "^4.2.0",
+		"gutil": "^1.6.4",
+		"prettier": "1.18.2",
+		"stylelint": "^11.0.0",
+		"stylelint-config-prettier": "^5.2.0",
+		"stylelint-config-wordpress": "^14.0.0",
+		"stylelint-prettier": "^1.1.1"
+	},
+	"scripts": {
+		"start": "gulp",
+		"styles": "gulp styles",
+		"vendorsJS": "gulp vendorsJS",
+		"customJS": "gulp customJS",
+		"images": "gulp images",
+		"clearCache": "gulp clearCache"
+	},
+	"dependencies": {
+		"node-sass": "^4.13.1"
+	}
+}

@@ -1,0 +1,117 @@
+#respond {
+	ul {
+		list-style-type: none;
+	}
+
+	.logged-in {
+		margin: 0 0 1.2rem;
+	}
+}
+
+#commentform {
+	.input-comments,
+	input[type="text"] {
+		width: 32.25%;
+		float: left;
+		margin-right: 1.62%;
+	}
+
+	label {
+		display: block;
+	}
+
+	.url-comments,
+	li.middle {
+		margin-right: 0 !important;
+	}
+}
+
+.comment-meta,
+.comment-author {
+	margin-bottom: 1.5rem;
+}
+
+.comments-closed {
+	margin: 4rem 0;
+}
+
+ol {
+	&.commentlist {
+		li {
+			&.pingback {
+				margin: 0 0 4rem;
+			}
+
+			div {
+				&.vcard cite.fn {
+					font-style: normal;
+				}
+
+				&.vcard img.avatar {
+					float: left;
+					margin: 0 1rem 0 0;
+					width: 60px;
+				}
+
+				&.commentmetadata {
+					padding: 0.8rem 0 1.4rem;
+				}
+
+				&.comment-meta {
+					@include font-size(1.4);
+					color: map-get($colors, grey);
+				}
+
+				&.reply {
+					@include font-size(1.4);
+					padding: 0 0 4rem;
+					font-weight: 700;
+				}
+			}
+
+			ul.children {
+				list-style: none;
+				margin: 1rem 0 0;
+
+				li {
+					&.depth-2,
+					&.depth-3,
+					&.depth-4,
+					&.depth-5 {
+						margin: 0 0 0 6rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+.comment-author.vcard {
+	@include font(open, bold, family weight);
+	@include font-size(2.4);
+	margin-bottom: 0;
+}
+
+a.comment-reply-link {
+	background-color: map-get($colors, red);
+	color: map-get($colors, white);
+	padding: 0.6rem 1.1rem;
+}
+
+a.comment-reply-link:hover {
+	background-color: map-get($colors, black);
+	color: map-get($colors, white);
+}
+
+.comment-body {
+	border-bottom: 1px solid #e9e9e9;
+	margin-bottom: 3.2rem;
+}
+
+.comment-content a {
+	word-wrap: break-word;
+}
+
+.bypostauthor {
+	display: block;
+}

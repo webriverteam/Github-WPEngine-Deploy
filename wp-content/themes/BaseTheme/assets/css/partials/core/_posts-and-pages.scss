@@ -1,0 +1,44 @@
+.sticky {
+	position: relative;
+	display: block;
+}
+
+.sticky:before {
+	content: "\f08d";
+	font-family: 'FontAwesome';
+	position: absolute;
+	color: map-get($colors, red);
+	@include font-size(2.4);
+	top: 10px
+}
+
+.sticky .post-title {
+	padding-left: 3rem
+}
+
+.updated:not(.published) {
+	display: none;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 2.4rem;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: auto;
+}
+
+.post,
+.page {
+	margin: auto;
+}
+
+.wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}

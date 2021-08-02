@@ -1,0 +1,116 @@
+i,
+cite,
+em,
+var,
+address,
+dfn {
+	font-style: italic;
+}
+
+code,
+pre,
+kbd,
+tt,
+var,
+samp {
+	font-family: monospace, monospace;
+	@include font-size(1.6);
+}
+
+abbr,
+acronym {
+	border-bottom: 1px dotted map-get($colors, grey);
+	cursor: help;
+}
+
+abbr[title] {
+	text-decoration: none;
+}
+
+address {
+	margin: 0 0 4rem 0;
+}
+
+b,
+strong {
+	font-weight: 500;
+	color: map-get($map: $colors, $key: black);
+}
+
+small {
+	font-size: 80%;
+}
+
+big {
+	font-size: 125%;
+}
+
+s,
+strike,
+del {
+	text-decoration: line-through;
+}
+
+del {
+	color: #ff6b6b;
+}
+
+u,
+ins {
+	text-decoration: underline;
+}
+
+ins {
+	color: #1dd1a1;
+}
+
+sub,
+sup {
+	font-size: 70%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+sup {
+	top: -0.5em;
+}
+
+code {
+	background-color: #080807;
+	padding: 3rem 3rem 3rem 3.5rem;
+	display: block;
+	margin: 0 0 4rem 0;
+	line-height: 1.5;
+	color: map-get($colors, white);
+	max-width: 100%;
+	overflow: auto;
+}
+
+pre {
+	background-color: #080807;
+	margin: 0 0 4rem 0;
+	padding: 3rem 3rem 3rem 3.5rem;
+	overflow-x: scroll;
+	line-height: 1.5;
+	color: map-get($colors, white);
+	max-width: 100%;
+	overflow: auto;
+}
+
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+hr {
+	background-color: map-get($colors, lightgrey);
+	border: 0;
+	height: 1px;
+	margin-bottom: 4rem;
+}

@@ -1,0 +1,84 @@
+ul,
+ol {
+	margin: 0 0 4.5rem 2.5rem;
+}
+
+ul {
+	list-style: none;
+	margin: 0 0 5rem 0;
+}
+
+.glide-block,
+.page-content,
+.banner-container {
+	ul {
+		list-style: none;
+
+		li {
+			padding-left: 50px;
+			position: relative;
+
+			&:before {
+				content: "";
+				width: 6px;
+				height: 6px;
+				background-position: left top;
+				position: absolute;
+				@include border-radius(50%);
+				background-color: map-get($map: $colors, $key: dblue);
+				left: 0;
+				top: 10px;
+			}
+		}
+	}
+}
+
+.glide-block,
+.page-content,
+.banner-container {
+	ol li {
+		position: relative;
+		counter-increment: list;
+		padding-left: 50px;
+
+		&:before {
+			color: map-get($colors, black);
+			@include font(open, reg, weight);
+			content: counter(list) ".";
+			left: 0;
+			top: 0px;
+			position: absolute;
+			width: 26px;
+		}
+	}
+}
+
+ol {
+	list-style: none;
+	margin: 0 0 5rem 0;
+}
+
+ul li,
+ol li {
+	margin: 0 0 1rem 0;
+}
+
+ul ul,
+ol ol {
+	margin: 2rem 0 0 5rem;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 2rem;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dl,
+dd {
+	margin: 0 0 4rem 0;
+}

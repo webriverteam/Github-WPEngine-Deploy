@@ -1,0 +1,34 @@
+.featured-image {
+	width: 100%;
+	margin: 7rem 0 5rem 0;
+	text-align: center;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+}
+
+a {
+	img {
+		border: none;
+		outline: none;
+		margin-bottom: 0;
+	}
+}
+
+figure {
+	margin: 1.6rem 0;
+}
+
+figcaption {
+	@include font(open, reg);
+	@include font-size(1.8);
+	margin: 0;
+}
+.wp-block-gallery li {
+	padding: 0 !important;
+	&:before {
+		display: none;
+	}
+}

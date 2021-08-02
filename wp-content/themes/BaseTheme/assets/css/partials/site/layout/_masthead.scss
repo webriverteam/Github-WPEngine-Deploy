@@ -1,0 +1,16 @@
+.banner-container {
+	text-align: center;
+	padding: 19rem 0 12.4rem 0;
+	background-color: map-get($map: $colors, $key: boti);
+}
+
+.banner-text {
+	max-width: 780px;
+	margin: 0 auto;
+
+	p {
+		font-size: 2.2rem;
+		color: map-get($map: $colors, $key: dgray);
+		margin: 0 0 3.8rem 0;
+	}
+}

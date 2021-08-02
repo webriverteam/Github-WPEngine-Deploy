@@ -1,0 +1,18 @@
+{
+	"extends": [
+		"stylelint-config-wordpress",
+		"stylelint-prettier/recommended"
+	],
+	"rules": {
+		"at-rule-empty-line-before": [
+			"always",
+			{
+				"except": [
+					"inside-block"
+				]
+			}
+		],
+		"at-rule-no-unknown": null,
+		"color-named": null
+	}
+}

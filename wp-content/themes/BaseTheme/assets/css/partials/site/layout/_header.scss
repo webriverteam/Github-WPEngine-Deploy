@@ -1,0 +1,90 @@
+.slide-thumb img,
+.burger-single,
+.post-tags,
+.post-content-des p,
+.post-meta,
+.search-button,
+.single-blog-post,
+.wpcf7-submit,
+a,
+a:visited,
+button,
+input[type="submit"],
+.home-banner,
+header {
+	@include transition(all, 0.3s, ease-in-out);
+	outline: 0;
+}
+
+.no-overflow {
+	overflow: hidden;
+}
+
+header {
+	padding: 24px 0 18px 0;
+	@include transition(all, 0.3s, ease-in-out);
+	z-index: 99999;
+	box-sizing: border-box;
+	width: 100%;
+	position: fixed;
+	top: 0;
+
+	&.shrink {
+		padding: 12px 0;
+		position: fixed;
+		background-color: map-get($map: $colors, $key: white);
+		box-shadow: 0px -4px 16px rgba(18, 27, 32, 0.15);
+	}
+}
+
+.logo {
+	position: relative;
+	z-index: 99999;
+	margin: 6px 0 0 0;
+	a {
+		display: block;
+		font-size: 20px;
+	}
+}
+
+.left-header {
+	float: left;
+	width: 340px;
+}
+
+.no-overflow .left-header {
+	// background-color: darken(map-get($colors, red), 4%);
+	z-index: 99999;
+	height: 72px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding-left: 5%;
+	padding-top: 6px;
+}
+
+.no-overflow header.shrink .left-header {
+	height: 61px;
+	padding-top: 0px;
+}
+
+.header-btns {
+	margin-top: 0;
+	float: right;
+	width: 340px;
+	text-align: right;
+	position: relative;
+	z-index: 1;
+
+	a.login-icon {
+		color: map-get($colors, headings);
+		@include font(open, reg, weight);
+		font-size: 17px;
+		margin: 15px 3.5rem 0 0;
+
+		&:hover {
+			color: map-get($colors, brightblue);
+		}
+	}
+}
